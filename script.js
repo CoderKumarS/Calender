@@ -13,7 +13,7 @@ function scrollR() {
     });
 }
 var typed3 = new Typed('#element', {
-    strings: ['Calender', '2024', 'Created using Html,Css and JS'],
+    strings: ['Calender', '2024', 'Created using Html','Css and JS'],
     typeSpeed: 20,
     backSpeed: 15,
     smartBackspace: true, // this is a default

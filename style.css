@@ -139,7 +139,6 @@ th {
     content: "";
     position: absolute;
     left: 0;
-    /* bottom: -2px; */
     bottom: -5px;
     height: 6px;
     width: 0%;
@@ -221,5 +220,19 @@ th {
     .top .header nav #second a {
         font-size: 3vw;
     }
-
+    .months table tr:nth-child(1) th {
+        font-size: 0.5em;
+    }
+    .months table tr th, .months table tr td {
+        font-size: 0.3em;
+    }
+    .wrapper{
+        min-width: 75vw;
+    }
+    .months {
+        height: 70vh;
+    }
+    .months table, tr td, th {
+        padding: 0.5vh;
+    }
 }

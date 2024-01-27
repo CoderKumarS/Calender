@@ -21,8 +21,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 3em;
-    position: relative;
+    flex-direction: column;
 }
 
 .top .header a span {
@@ -33,19 +32,26 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 3em;
-    position: absolute;
-    top: 50%;
+    width: 100%;
 }
 
-.top .header nav a {
+.top .header nav #first,
+.top .header nav #second {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.top .header nav #first a,
+.top .header nav #second a {
     text-decoration: none;
     color: black;
-    margin-block: 3vh;
     font-size: 1.5vw;
 }
 
-.top .header nav a:hover {
+.top .header nav #first a:hover,
+.top .header nav #second a:hover {
     color: gray;
 }
 
@@ -125,9 +131,10 @@ th {
     color: red;
 }
 
-.months table tr:nth-child(1){
+.months table tr:nth-child(1) {
     position: relative;
 }
+
 .months table tr:nth-child(1) th::before {
     content: "";
     position: absolute;
@@ -140,9 +147,11 @@ th {
     background: rgba(63, 174, 214, 1);
     transition: width 0.3s ease;
 }
+
 .months table tr:nth-child(1) th:hover:before {
     width: 100%;
 }
+
 .months table tr:nth-child(2) th:hover {
     background-color: #0047ab;
     border-radius: 10px;
@@ -155,7 +164,7 @@ th {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.months table tr:nth-child(1) th{
+.months table tr:nth-child(1) th {
     font-size: 1em;
     letter-spacing: 0.5em;
     text-transform: uppercase;
@@ -164,6 +173,7 @@ th {
         "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
     color: black;
 }
+
 .icon {
     width: 55px;
     display: flex;
@@ -184,5 +194,32 @@ th {
     font-size: 42px;
     color: red;
     animation: all 2s linear 1s;
+
+}
+
+@media screen and (max-width: 480px) {
+    .top .header {
+        gap: 0.3em;
+    }
+
+    .top .header a span {
+        font-size: 4vh;
+    }
+
+    .top .header nav {
+        flex-direction: column;
+        gap: 1vw;
+    }
+
+    .top .header nav #first,
+    .top .header nav #second {
+        justify-content: space-between;
+        width: 95%;
+    }
+
+    .top .header nav #first a,
+    .top .header nav #second a {
+        font-size: 3vw;
+    }
 
 }

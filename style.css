@@ -15,6 +15,7 @@
     left: 0;
     height: 10%;
     background-image: linear-gradient(to right, blue, cyan);
+    z-index: 15;
 }
 
 .top .header {

@@ -16,9 +16,25 @@
         <div class="top">
             <div class="header">
                 <a class="title">
-                    <span>Calender</span>
+                    <span id="element"></span>
                 </a>
                 <nav>
+                    <!-- <div id="first">
+                        <a href="#jan">January</a>
+                        <a href="#feb">February</a>
+                        <a href="#mar">March</a>
+                        <a href="#apr">April</a>
+                        <a href="#may">May</a>
+                        <a href="#jun">June</a>
+                    </div>
+                    <div class="second">
+                        <a href="#jan">July</a>
+                        <a href="#aug">August</a>
+                        <a href="#sep">September</a>
+                        <a href="#oct">October</a>
+                        <a href="#nov">November</a>
+                        <a href="#dec">December</a>
+                    </div> -->
                     <a href="#jan">January</a>
                     <a href="#feb">February</a>
                     <a href="#mar">March</a>
@@ -777,6 +793,16 @@
             </div>
         </div>
     </div>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed3 = new Typed('#element', {
+            strings: ['Calender', '2024', 'Created using Html,Css and JS'],
+            typeSpeed: 20,
+            backSpeed: 15,
+            smartBackspace: true, // this is a default
+            loop: true
+        });
+    </script>
     <script src="script.js"></script>
 </body>
 

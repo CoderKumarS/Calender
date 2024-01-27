@@ -125,6 +125,24 @@ th {
     color: red;
 }
 
+.months table tr:nth-child(1){
+    position: relative;
+}
+.months table tr:nth-child(1) th::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    /* bottom: -2px; */
+    bottom: -5px;
+    height: 6px;
+    width: 0%;
+    margin-bottom: 5px;
+    background: rgba(63, 174, 214, 1);
+    transition: width 0.3s ease;
+}
+.months table tr:nth-child(1) th:hover:before {
+    width: 100%;
+}
 .months table tr:nth-child(2) th:hover {
     background-color: #0047ab;
     border-radius: 10px;
